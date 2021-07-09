@@ -8,9 +8,20 @@
 	<link rel="stylesheet" href="./css/source-sans-pro.css" />
 	<link rel="stylesheet" href="./css/custom.css" />
 </head>
-<body class="bg-white dark:bg-gray-900">
-	<button id="boton" class="bg-white">modo</button>
-	<div class="text-semibold text-gray-500 dark:text-white text-3xl">
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+
+	<div class="flex justify-end items-center">
+		<span class="text-sm">Light</span>
+		<div>
+			<input class="hidden" type="checkbox" name="" id="toggle" />
+			<div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1">
+				<div class="w-4 h-4 bg-white rounded-full shadow-md"></div>
+			</div>
+		</div>
+		<span class="text-sm">Dark</span>
+	</div>
+
+	<div class="text-semibold text-3xl">
 		<div>CSS</div>
 		<div class="text-light text-purple-500 dark:text-yellow-500">JavaScript.</div>
 		<div>Web y Móvil.</div>
@@ -18,6 +29,5 @@
 		<div class="text-light text-purple-500 dark:text-yellow-500">Merchandising y Packaging.</div>
 		<div>Identidad Corporativa.</div>
 	</div>
-	<script src="./js/darkMode.js"></script>
 </body>
 </html>
