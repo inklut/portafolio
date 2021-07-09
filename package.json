@@ -5,8 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build:css": "postcss ./src/css/tailwind.css -o ./dist/css/custom.css",
-	"build": "NODE_ENV=production postcss ./src/css/tailwind.css -o ./dist/css/custom.css"
+    "build:css": "postcss ./src/css/tailwind.css -o ./dist/css/custom.css",
+    "build": "NODE_ENV=production postcss ./src/css/tailwind.css -o ./dist/css/custom.css"
   },
   "keywords": [],
   "author": "",
