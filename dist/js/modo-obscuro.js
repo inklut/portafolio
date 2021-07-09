@@ -1,5 +1,6 @@
 const checkbox = document.querySelector('#toggle');
 const html = document.querySelector('html');
+
 const toggleDarkMode = function () {
     checkbox.checked
     ? html.classList.add('dark')
