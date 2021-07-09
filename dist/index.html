@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +8,23 @@
 	<link rel="stylesheet" href="./css/source-sans-pro.css" />
 	<link rel="stylesheet" href="./css/custom.css" />
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+<body class="antialiased bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
 
-	<div class="flex justify-end items-center">
-		<span class="text-sm">Light</span>
+	<div class="flex justify-end items-center space-x-2">
+		<span class="text-sm mr-2">Claro</span>
 		<div>
 			<input class="hidden" type="checkbox" name="" id="toggle" />
-			<div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1">
-				<div class="w-4 h-4 bg-white rounded-full shadow-md"></div>
-			</div>
+			<label for="toggle">
+				<div>
+					<div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1">
+						<div class="w-4 h-4 toggle-dot bg-white rounded-full shadow-md transform duration-300 ease-in-out"></div>
+					</div>
+				</div>
+			</label>
 		</div>
-		<span class="text-sm">Dark</span>
+		<span class="text-sm ml-2">Obscuro</span>
 	</div>
-
+	
 	<div class="text-semibold text-3xl">
 		<div>CSS</div>
 		<div class="text-light text-purple-500 dark:text-yellow-500">JavaScript.</div>
@@ -29,5 +33,7 @@
 		<div class="text-light text-purple-500 dark:text-yellow-500">Merchandising y Packaging.</div>
 		<div>Identidad Corporativa.</div>
 	</div>
+
+	<script src="./js/modo-obscuro.js"></script>
 </body>
 </html>
