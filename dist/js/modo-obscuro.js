@@ -10,7 +10,6 @@ const toggleDarkMode = function () {
 toggleDarkMode();
 checkbox.addEventListener('click', toggleDarkMode);
 
-
 if (localStorage.toggleDarkMode === 'dark' || (!('checkbox' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     html.documentElement.classList.add('dark')
 } else {
