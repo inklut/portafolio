@@ -1,31 +1,4 @@
-const checkbox = document.querySelector('#toggle');
-// const html = document.querySelector('html');
-
-// const toggleDarkMode = function () {
-//     checkbox.checked
-//     ? html.classList.add('dark')
-//     : html.classList.remove('dark')
-// };
-
-// toggleDarkMode();
-// checkbox.addEventListener('click', toggleDarkMode);
-
-// const toggleDarkMode = document.getElementById('toggle').addEventListener('click', function() {
-//     checkbox.checked
-//     let html = document.querySelector('html').classList;
-//     if(localStorage.theme == 'dark') {
-//         html.remove('dark')
-//         localStorage.removeItem('theme')
-//     } else {
-//         html.add('dark')
-//         localStorage.theme = 'dark';
-//     }  
-// })
-
-// toggleDarkMode();
-// checkbox.addEventListener('click', toggleDarkMode);
-
-
+// 3:
 let theme = localStorage.getItem('theme');
 let userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 let toggleDark = document.getElementById('toggle-dark');
