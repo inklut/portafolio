@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,13 @@
 	<title>Servicios multimedia y desarrollo frontend.</title>
 	<link rel="stylesheet" href="./css/source-sans-pro.css" />
 	<link rel="stylesheet" href="./css/custom.css" />
+	<script>
+		if (localStorage.theme === 'dark' || (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.querySelector('html').classList.add('dark')
+		} else if (localStorage.theme === 'dark') {
+			document.querySelector('html').classList.add('dark')
+		}
+	</script>
 </head>
 <body class="antialiased bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
 
