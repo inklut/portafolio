@@ -7,17 +7,11 @@
 	<title>Servicios multimedia y desarrollo frontend.</title>
 	<link rel="stylesheet" href="./css/source-sans-pro.css" />
 	<link rel="stylesheet" href="./css/custom.css" />
-	<script>
-		if (localStorage.theme === 'dark' || (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-			document.querySelector('html').classList.add('dark')
-		} else if (localStorage.theme === 'dark') {
-			document.querySelector('html').classList.add('dark')
-		}
-	</script>
+	<script src="./js/localStorage.js"></script>
 </head>
 <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
-
-	<!-- <div class="flex items-center space-x-2">
+	<!-- 
+	<div class="flex items-center space-x-2">
 		<span class="text-sm mr-2 dark:text-gray-600">Claro</span>
 		<div>
 			<input class="hidden" type="checkbox" name="toggle" id="toggle" />
@@ -30,14 +24,13 @@
 			</label>
 		</div>
 		<span class="text-sm ml-2 dark:text-gray-600">Obscuro</span>
-	</div> -->
+	</div> 
+	-->
 
-	<!-- Moon SVG from Heroicons -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 cursor-pointer hidden" id="toggle-dark">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 cursor-pointer hidden dark:text-gray-500" id="toggle-dark">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
     </svg>
-    <!-- Sun SVG from Heroicons -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 cursor-pointer hidden" id="toggle-light">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 cursor-pointer hidden dark:text-gray-500" id="toggle-light">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
     </svg>
 	
